@@ -3,7 +3,7 @@
 This repository contains the source code for the **ADESKSKILLS Kenya** official website. The platform showcases ADESKSKILLS' mission in enhancing technical skills, providing solar installation services, and delivering digital training programs through an integrated Learning Management System (LMS).
 
 ## 🌟 Live Website
-[https://adeskills.co.ke](https://adeskills.co.ke) *(replace with actual link after deployment)*
+[https://adeskills.co.ke](https://adeskills.co.ke) 
 
 
 ## 🚀 Project Overview
