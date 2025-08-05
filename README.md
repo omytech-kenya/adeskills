@@ -52,7 +52,6 @@ next.config.js // Next.js Configuration
 - Authentication Flow (Coming Soon)
 - Fully Scalable for LMS Backend Integration.
 
----
 
 ## 🛠️ Setup Instructions
 1. **Clone the repository**
