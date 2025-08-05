@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ADESKSKILLS Kenya - Official Website
 
-## Getting Started
+This repository contains the source code for the **ADESKSKILLS Kenya** official website. The platform showcases ADESKSKILLS' mission in enhancing technical skills, providing solar installation services, and delivering digital training programs through an integrated Learning Management System (LMS).
 
-First, run the development server:
+## 🌟 Live Website
+[https://adeskills.co.ke](https://adeskills.co.ke) *(replace with actual link after deployment)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## 🚀 Project Overview
+ADESKSKILLS Kenya is committed to bridging the gap in technical education and supporting the development of solar energy in Kenya. This website is designed to:
+- Showcase company information and services.
+- Provide access to training programs.
+- Integrate an LMS for digital courses and certifications.
+- Facilitate communication with trainees and partners.
+
+
+## 🖥️ Tech Stack
+- **Framework:** Next.js (React)
+- **Styling:** Tailwind CSS
+- **Authentication:** (Planned) Appwrite / Firebase Authentication
+- **Backend (LMS):** (Planned) Appwrite / Custom Backend
+- **Deployment:** Vercel
+
+
+## 📂 Project Structure
+```
+/pages
+|-- index.js // Home Page
+|-- about.js // About Us Page
+|-- services.js // Services Overview
+|-- lms.js // LMS Introduction Page
+|-- contact.js // Contact Us Page
+/public
+|-- images/ // Static Images
+/components
+|-- Navbar.js // Navigation Bar
+|-- Footer.js // Footer Component
+|-- ServiceCard.js // Reusable Service Cards
+/styles
+|-- globals.css // Global Styles
+next.config.js // Next.js Configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Features
+- Responsive Modern Design (Black & White Theme with Solar Yellow accents)
+- Clean, Minimal UI aligned with ADESKSKILLS brand.
+- Service Showcase: Training Programs, Solar Installation, Consultancy.
+- LMS Section Preview (Dashboard Placeholder)
+- Contact Form Integration.
+- Authentication Flow (Coming Soon)
+- Fully Scalable for LMS Backend Integration.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Setup Instructions
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/adeskills-website.git
+    cd adeskills-website
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the Development Server**
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+4. **Build for Production**
+    ```bash
+    npm run build
+    npm start
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Deploy to Vercel (Recommended)**
+    - Go to [https://vercel.com](https://vercel.com)
+    - Connect your GitHub repository.
+    - Follow deployment instructions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## ✨ Future Roadmap
+- [ ] Integrate LMS Dashboard with Appwrite/Firebase.
+- [ ] Implement Role-based Authentication (Students, Trainers, Admin).
+- [ ] Dynamic Course Listings & Enrollment System.
+- [ ] CMS for content management.
+- [ ] Certification Module after course completion.
+
+
+## 📧 Contact Information
+- Email: adeskills@outlook.com
+- Phone: +254 795 133 107 / +254 721 933 152
+- Website: [adeskills.co.ke](https://adeskills.co.ke)
+
+
+## 📝 License
+This project is proprietary and owned by ADESKSKILLS Kenya. All rights reserved.
+
+
+## 🙌 Credits
+- Developed by [OMYTECH](https://omytech.co.ke)
