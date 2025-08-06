@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 export default function Careers() {
   const [activeTab, setActiveTab] = useState("opportunities");
@@ -126,6 +128,7 @@ export default function Careers() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       {/* Hero Section */}
       <section className="py-12 sm:py-20 bg-gradient-to-br from-[#002366] to-[#6D0D0D] relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
@@ -460,6 +463,7 @@ export default function Careers() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 } 

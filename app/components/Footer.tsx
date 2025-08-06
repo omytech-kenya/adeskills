@@ -6,7 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
-            <h3 className="text-2xl font-bold mb-4">ADESKILLS</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              ADES<span className="text-[#D71920]">K</span>
+            </h3>
             <p className="text-gray-300 mb-4">
               Enhancing technical skills and supporting the development of solar energy in Kenya.
             </p>
@@ -51,7 +53,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-300">© 2025 ADESKILLS Kenya. All Rights Reserved.</p>
+          <p className="text-gray-300">© 2025 ADES<span className="text-[#D71920]">K</span> Kenya. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

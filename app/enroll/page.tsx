@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 export default function Enroll() {
   const [formData, setFormData] = useState({
@@ -22,6 +24,7 @@ export default function Enroll() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#002366] to-[#6D0D0D] py-12 px-4 sm:px-6 lg:px-8">
+      <Navigation />
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <Link href="/" className="text-3xl font-bold text-white mb-4 inline-block">
@@ -230,6 +233,7 @@ export default function Enroll() {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 } 

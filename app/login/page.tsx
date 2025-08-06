@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -17,6 +19,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#002366] to-[#6D0D0D] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <Navigation />
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
           <Link href="/" className="text-3xl font-bold text-white mb-2 inline-block">
@@ -102,6 +105,7 @@ export default function Login() {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 } 
