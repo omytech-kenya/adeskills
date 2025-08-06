@@ -3,11 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent: #FFC107;
-  --accent-hover: #E6A800;
+  --accent: #D71920;
+  --accent-hover: #B3141A;
   --section-bg: #F5F5F5;
-  --gradient-start: #FFC107;
-  --gradient-end: #FFD54F;
+  --gradient-start: #002366;
+  --gradient-end: #6D0D0D;
+  --navy-blue: #002366;
+  --maroon-red: #6D0D0D;
+  --bright-red: #D71920;
+  --white: #FFFFFF;
+  --light-gray-blue: #50708F;
+  --neutral-gray: #E5E5E5;
 }
 
 @theme inline {
@@ -16,6 +22,12 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-section-bg: var(--section-bg);
+  --color-navy-blue: var(--navy-blue);
+  --color-maroon-red: var(--maroon-red);
+  --color-bright-red: var(--bright-red);
+  --color-white: var(--white);
+  --color-light-gray-blue: var(--light-gray-blue);
+  --color-neutral-gray: var(--neutral-gray);
   --font-sans: var(--font-josefin);
 }
 
@@ -48,13 +60,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #FFC107, #FFD54F);
+  background: linear-gradient(135deg, #002366, #6D0D0D);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #E6A800, #FFC107);
+  background: linear-gradient(135deg, #6D0D0D, #002366);
 }
 
 /* Modern animations */
@@ -136,7 +148,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #FFC107, #FFD54F);
+  background: linear-gradient(135deg, #002366, #D71920);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -212,7 +224,7 @@ body {
 /* Modern navbar */
 .modern-navbar {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 35, 102, 0.95);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -229,7 +241,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #FFC107, #FFD54F);
+  background: linear-gradient(135deg, #002366, #D71920);
   transition: width 0.3s ease;
   border-radius: 1px;
 }
@@ -239,7 +251,7 @@ body {
 }
 
 .nav-link.active {
-  color: #FFC107 !important;
+  color: #D71920 !important;
   font-weight: 600;
 }
 
@@ -256,13 +268,13 @@ body {
 
 /* Modern text selection */
 ::selection {
-  background: #FFC107;
-  color: #000;
+  background: #D71920;
+  color: #FFFFFF;
 }
 
 /* Modern focus styles */
 *:focus {
-  outline: 2px solid #FFC107;
+  outline: 2px solid #D71920;
   outline-offset: 2px;
 }
 

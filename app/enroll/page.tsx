@@ -21,14 +21,14 @@ export default function Enroll() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-[#002366] to-[#6D0D0D] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <Link href="/" className="text-3xl font-bold gradient-text mb-4 inline-block">
+          <Link href="/" className="text-3xl font-bold text-white mb-4 inline-block">
             ADESKILLS
           </Link>
-          <h1 className="text-4xl font-bold text-black mb-4">Enroll in Training</h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-4">Enroll in Training</h1>
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Start your journey in solar technology with our comprehensive training programs. 
             Fill out the form below to begin your enrollment process.
           </p>
@@ -51,7 +51,7 @@ export default function Enroll() {
                     placeholder="Enter your first name"
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
                   />
                 </div>
                 <div>
@@ -65,7 +65,7 @@ export default function Enroll() {
                     placeholder="Enter your last name"
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
                   />
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function Enroll() {
                   placeholder="Enter your email address"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
                 />
               </div>
 
@@ -96,7 +96,7 @@ export default function Enroll() {
                   placeholder="Enter your phone number"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
                 />
               </div>
 
@@ -109,7 +109,7 @@ export default function Enroll() {
                   required
                   value={formData.program}
                   onChange={(e) => setFormData({ ...formData, program: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 text-black"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 text-black"
                 >
                   <option value="">Select a training program</option>
                   <option value="solar-installation">Solar Installation Technician</option>
@@ -128,7 +128,7 @@ export default function Enroll() {
                   id="experience"
                   value={formData.experience}
                   onChange={(e) => setFormData({ ...formData, experience: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 text-black"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 text-black"
                 >
                   <option value="">Select your experience level</option>
                   <option value="beginner">Beginner (No experience)</option>
@@ -147,13 +147,13 @@ export default function Enroll() {
                   placeholder="Tell us about your goals and any specific requirements..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 resize-none placeholder-gray-500 placeholder-opacity-100 text-black"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 resize-none placeholder-gray-500 placeholder-opacity-100 text-black"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 gradient-bg text-black font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 modern-btn"
+                className="w-full px-8 py-4 bg-[#D71920] text-white font-semibold rounded-xl hover:bg-[#B3141A] transition-all duration-300 transform hover:-translate-y-1 modern-btn"
               >
                 Submit Enrollment
               </button>
@@ -165,21 +165,21 @@ export default function Enroll() {
             <div className="bg-white rounded-2xl p-8 modern-shadow border border-gray-100">
               <h3 className="text-xl font-bold text-black mb-4">Training Programs</h3>
               <div className="space-y-4">
-                <div className="border-l-4 border-[#FFC107] pl-4">
-                  <h4 className="font-semibold text-black">Solar Installation Technician</h4>
-                  <p className="text-sm text-gray-600">Learn hands-on solar panel installation and system setup</p>
+                <div className="border-l-4 border-[#D71920] pl-4">
+                  <h3 className="font-semibold text-black">Solar Installation Training</h3>
+                  <p className="text-gray-600 text-sm">Hands-on training in solar panel installation and maintenance</p>
                 </div>
-                <div className="border-l-4 border-[#FFC107] pl-4">
-                  <h4 className="font-semibold text-black">Solar System Maintenance</h4>
-                  <p className="text-sm text-gray-600">Master solar system troubleshooting and maintenance</p>
+                <div className="border-l-4 border-[#D71920] pl-4">
+                  <h3 className="font-semibold text-black">Electrical Systems</h3>
+                  <p className="text-gray-600 text-sm">Comprehensive electrical system design and implementation</p>
                 </div>
-                <div className="border-l-4 border-[#FFC107] pl-4">
-                  <h4 className="font-semibold text-black">Electrical Fundamentals</h4>
-                  <p className="text-sm text-gray-600">Build strong electrical foundation for solar work</p>
+                <div className="border-l-4 border-[#D71920] pl-4">
+                  <h3 className="font-semibold text-black">Project Management</h3>
+                  <p className="text-gray-600 text-sm">Project planning, execution, and quality control</p>
                 </div>
-                <div className="border-l-4 border-[#FFC107] pl-4">
-                  <h4 className="font-semibold text-black">Advanced Solar Technology</h4>
-                  <p className="text-sm text-gray-600">Explore cutting-edge solar technologies and innovations</p>
+                <div className="border-l-4 border-[#D71920] pl-4">
+                  <h3 className="font-semibold text-black">Safety & Compliance</h3>
+                  <p className="text-gray-600 text-sm">Safety protocols and regulatory compliance training</p>
                 </div>
               </div>
             </div>
@@ -188,33 +188,33 @@ export default function Enroll() {
               <h3 className="text-xl font-bold text-black mb-4">Why Choose ADESKILLS?</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-[#FFC107] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <div className="w-6 h-6 bg-[#D71920] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <p className="text-sm text-gray-600">Hands-on practical training with real equipment</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-[#FFC107] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <div className="w-6 h-6 bg-[#D71920] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <p className="text-sm text-gray-600">Industry-recognized certifications</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-[#FFC107] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <div className="w-6 h-6 bg-[#D71920] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <p className="text-sm text-gray-600">Online LMS platform for flexible learning</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-[#FFC107] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg className="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <div className="w-6 h-6 bg-[#D71920] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
                   <p className="text-sm text-gray-600">Job placement assistance and career support</p>

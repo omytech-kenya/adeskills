@@ -16,14 +16,14 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-orange-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-[#002366] to-[#6D0D0D] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <Link href="/" className="text-3xl font-bold gradient-text mb-2 inline-block">
+          <Link href="/" className="text-3xl font-bold text-white mb-2 inline-block">
             ADESKILLS
           </Link>
-          <h2 className="text-3xl font-bold text-black mb-2">Welcome Back</h2>
-          <p className="text-gray-600">Sign in to your account to continue</p>
+          <h2 className="text-3xl font-bold text-white mb-2">Welcome Back</h2>
+          <p className="text-gray-200">Sign in to your account to continue</p>
         </div>
 
         <div className="bg-white rounded-2xl p-8 modern-shadow border border-gray-100">
@@ -39,7 +39,7 @@ export default function Login() {
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
+                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
               />
             </div>
 
@@ -54,7 +54,7 @@ export default function Login() {
                 placeholder="Enter your password"
                 value={formData.password}
                 onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
+                className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D71920] focus:border-transparent transition-all duration-200 placeholder-gray-500 placeholder-opacity-100 text-black"
               />
             </div>
 
@@ -64,7 +64,7 @@ export default function Login() {
                   id="remember-me"
                   name="remember-me"
                   type="checkbox"
-                  className="h-4 w-4 text-[#FFC107] focus:ring-[#FFC107] border-gray-300 rounded"
+                  className="h-4 w-4 text-[#D71920] focus:ring-[#D71920] border-gray-300 rounded"
                 />
                 <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
                   Remember me
@@ -72,7 +72,7 @@ export default function Login() {
               </div>
 
               <div className="text-sm">
-                <a href="#" className="font-medium text-[#FFC107] hover:text-[#E6A800] transition-colors">
+                <a href="#" className="font-medium text-[#D71920] hover:text-[#B3141A] transition-colors">
                   Forgot password?
                 </a>
               </div>
@@ -80,7 +80,7 @@ export default function Login() {
 
             <button
               type="submit"
-              className="w-full px-8 py-4 gradient-bg text-black font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 modern-btn"
+              className="w-full px-8 py-4 bg-[#D71920] text-white font-semibold rounded-xl hover:bg-[#B3141A] transition-all duration-300 transform hover:-translate-y-1 modern-btn"
             >
               Sign In
             </button>
@@ -89,7 +89,7 @@ export default function Login() {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Don't have an account?{" "}
-              <Link href="/enroll" className="font-medium text-[#FFC107] hover:text-[#E6A800] transition-colors">
+              <Link href="/enroll" className="font-medium text-[#D71920] hover:text-[#B3141A] transition-colors">
                 Enroll now
               </Link>
             </p>
@@ -97,7 +97,7 @@ export default function Login() {
         </div>
 
         <div className="text-center">
-          <Link href="/" className="text-gray-600 hover:text-black transition-colors">
+          <Link href="/" className="text-gray-200 hover:text-white transition-colors">
             ← Back to Home
           </Link>
         </div>
