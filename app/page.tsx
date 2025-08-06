@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import HeroCarousel from "./components/HeroCarousel";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -35,41 +36,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-
-      {/* Hero Section */}
-      <section id="home" className="py-12 sm:py-20 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 to-orange-50 opacity-50"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="space-y-6 sm:space-y-8 animate-fade-in-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black leading-tight">
-                Enhancing Technical Skills for{" "}
-                <span className="gradient-text">Kenya's Renewable Energy Future</span>
-              </h1>
-              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-                Empowering individuals through technical training and solar energy solutions.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact" className="px-6 sm:px-8 py-3 sm:py-4 bg-[#D71920] text-white font-semibold rounded-xl hover:bg-[#B3141A] transition-all duration-300 transform hover:-translate-y-1 modern-btn text-sm sm:text-base text-center">
-                  Make an Appointment
-                </Link>
-                <Link href="/programs" className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#002366] text-[#002366] font-semibold rounded-xl hover:bg-[#002366] hover:text-white transition-all duration-300 hover:shadow-md text-sm sm:text-base text-center">
-                  Join a Program
-                </Link>
-              </div>
-            </div>
-            <div className="relative animate-fade-in-right">
-              <Image
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Solar Technician Working"
-                width={600}
-                height={400}
-                className="w-full h-64 sm:h-96 object-cover rounded-2xl modern-shadow-lg modern-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroCarousel variant="home" />
 
       {/* About Section */}
       <section id="about" className="py-20 bg-[#F5F5F5] relative">
@@ -87,7 +54,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src="/gallery/adsk4.jpeg"
                 alt="Solar Panels Installation Close-up"
                 width={600}
                 height={400}
@@ -110,7 +77,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 modern-card animate-fade-in-up">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/gallery/adsk5.jpeg"
                   alt="People in a Training Session"
                   fill
                   className="object-cover modern-image"
@@ -126,7 +93,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 modern-card animate-fade-in-up">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/gallery/adsk6.jpeg"
                   alt="Technicians Installing Solar Panels"
                   fill
                   className="object-cover modern-image"
@@ -142,7 +109,7 @@ export default function Home() {
             <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 modern-card animate-fade-in-up">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/gallery/adsk7.jpeg"
                   alt="Engineer with Helmet Reviewing Plans"
                   fill
                   className="object-cover modern-image"
@@ -152,32 +119,6 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-black mb-3">Technical Skill Development</h3>
                 <p className="text-gray-600">Comprehensive skill development programs for technical professionals in renewable energy.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* LMS Section */}
-      <section id="lms" className="py-20 bg-[#F5F5F5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-black">Learning Management System (LMS)</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Our online LMS platform ensures equitable access to training materials, digital lessons, and certification for students across Kenya. Enroll, track progress, and learn at your own pace.
-              </p>
-              <Link href="/contact" className="inline-block px-8 py-4 bg-[#D71920] text-white font-semibold rounded-lg hover:bg-[#B3141A] transition-colors shadow-sm">
-                Explore LMS
-              </Link>
-            </div>
-            <div className="relative">
-              <Image
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="LMS Dashboard Sample"
-                width={600}
-                height={400}
-                className="w-full h-80 object-cover rounded-lg"
-              />
             </div>
           </div>
         </div>
@@ -220,7 +161,7 @@ export default function Home() {
           
           <div className="text-center">
             <Image
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              src="/gallery/adsk2.jpeg"
               alt="Happy Group Photo"
               width={800}
               height={400}
