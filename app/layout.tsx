@@ -10,6 +10,9 @@ const josefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "ADESKILLS Kenya - Technical Skills & Solar Energy Training",
   description: "Enhancing technical skills and supporting the development of solar energy in Kenya through experiential training and LMS platform.",
+  icons: {
+    icon: "/gallery/adesklogo.jpeg",
+  },
 };
 
 export default function RootLayout({
