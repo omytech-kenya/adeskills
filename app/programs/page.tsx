@@ -39,7 +39,7 @@ export default function Programs() {
             <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/gallery/adsk1.jpeg"
                   alt="Solar Panel Installation Workshop"
                   fill
                   className="object-cover"
@@ -48,10 +48,7 @@ export default function Programs() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-black mb-3">Solar Panel Installation</h3>
                 <p className="text-gray-600 mb-4">Learn the fundamentals of solar panel installation, wiring, and system configuration.</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-[#D71920] font-semibold">Duration: 3 Days</span>
-                  <span className="text-gray-500">Next: March 15-17</span>
-                </div>
+
               </div>
             </div>
 
@@ -59,7 +56,7 @@ export default function Programs() {
             <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/gallery/adsk2.jpeg"
                   alt="Electrical Systems Workshop"
                   fill
                   className="object-cover"
@@ -68,10 +65,7 @@ export default function Programs() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-black mb-3">Electrical Systems Design</h3>
                 <p className="text-gray-600 mb-4">Master electrical system design principles for solar installations and renewable energy projects.</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-[#D71920] font-semibold">Duration: 5 Days</span>
-                  <span className="text-gray-500">Next: March 22-26</span>
-                </div>
+
               </div>
             </div>
 
@@ -79,7 +73,7 @@ export default function Programs() {
             <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="/gallery/adsk3.jpeg"
                   alt="System Maintenance Workshop"
                   fill
                   className="object-cover"
@@ -88,10 +82,7 @@ export default function Programs() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-black mb-3">System Maintenance & Troubleshooting</h3>
                 <p className="text-gray-600 mb-4">Learn to maintain, troubleshoot, and optimize solar energy systems for maximum efficiency.</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-[#D71920] font-semibold">Duration: 2 Days</span>
-                  <span className="text-gray-500">Next: April 5-6</span>
-                </div>
+
               </div>
             </div>
           </div>
