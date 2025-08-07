@@ -16,8 +16,12 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Contact form submitted:", formData);
+    const mailtoLink = `mailto:adeskills@outlook.com?subject=${encodeURIComponent(
+      formData.subject
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
+    )}`;
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -254,15 +258,17 @@ export default function Contact() {
           </div>
           
           <div className="bg-white rounded-2xl p-8 modern-shadow border border-gray-100">
-            <div className="aspect-video bg-gray-200 rounded-xl flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p className="text-gray-500">Google Maps integration coming soon</p>
-                <p className="text-gray-400 text-sm">Nairobi, Kenya</p>
-              </div>
+            <div className="aspect-video rounded-xl overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.553362957961!2d36.7796575837512!3d-1.3092696686261618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f108100fe3e51%3A0x4346558a13fb9507!2sMakina%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1754558245287!5m2!1sen!2ske" 
+                width="600" 
+                height="450" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>
