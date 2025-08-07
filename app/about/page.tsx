@@ -57,6 +57,29 @@ export default function About() {
         </div>
       </section>
 
+      {/* Our Story Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-black mb-4">Our <span className="text-[#D71920]">Story</span></h2>
+          </div>
+          <div className="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed space-y-6">
+            <p>
+              ADESKILLS Kenya was born out of the ADESK project, a bold vision under French Educational International (FEI) and the French Embassy in Kenya, to close the gap between education and employable skills for Kenya’s youth and technicians. What started as a simple idea in 2022 has grown into a dynamic movement reshaping how vocational training is delivered in underserved communities.
+            </p>
+            <p>
+              Founded by a beneficiary of the ADESK project, ADESKILLS set out to solve a pressing problem: too many skilled youth were being left behind due to a lack of hands-on training, outdated curricula, or limited access to tools and mentorship. We asked ourselves: What if we could make learning practical, mobile, and empowering?
+            </p>
+            <p>
+              From the start, ADESKILLS Kenya focused on solar energy and electrical installation, two rapidly growing sectors with enormous potential for employment and impact. Early workshops piloted in Nairobi and Kiambu confirmed what we believed—experiential, skill-based learning transforms lives.
+            </p>
+            <p>
+              Since its inception in August 2024, Adeskills has trained over 300 youth and technicians through hands-on workshops and field-based projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Team Section */}
       <section className="py-20 bg-[#F5F5F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,11 +92,16 @@ export default function About() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Team Member 1 - Raziq Swaleh */}
-            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-400 mb-2">ADESKILLS</div>
-                </div>
+            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div className="h-64 relative">
+                <Image
+                  src="/gallery/adesk1.jpeg"
+                  alt="Raziq Swaleh"
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-500 group-hover:scale-110"
+                  style={{ objectPosition: 'center 25%' }}
+                />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-black mb-2">Raziq Swaleh</h3>
@@ -85,11 +113,15 @@ export default function About() {
             </div>
 
             {/* Team Member 2 - Swaleh Ibrahim */}
-            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-400 mb-2">ADESKILLS</div>
-                </div>
+            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div className="h-64 relative">
+                <Image
+                  src="/gallery/adesk2.jpeg"
+                  alt="Swaleh Ibrahim"
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-500 group-hover:scale-110 object-top"
+                />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-black mb-2">Swaleh Ibrahim</h3>
@@ -100,73 +132,23 @@ export default function About() {
               </div>
             </div>
 
-            {/* Team Member 3 - Grace Njeri */}
-            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-400 mb-2">ADESKILLS</div>
-                </div>
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-black mb-2">Grace Njeri</h3>
-                <p className="text-[#D71920] font-medium mb-3">Senior Trainer</p>
-                <p className="text-gray-600 text-sm">
-                  Specialized in technical skill development and experiential learning programs with a focus on youth empowerment.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 4 - Stephen Ogutu */}
-            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-400 mb-2">ADESKILLS</div>
-                </div>
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-black mb-2">Stephen Ogutu</h3>
-                <p className="text-[#D71920] font-medium mb-3">Technical Trainer</p>
-                <p className="text-gray-600 text-sm">
-                  Expert in solar technology training and practical implementation with extensive field experience.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 5 - Sharleen Kiragu */}
-            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-400 mb-2">ADESKILLS</div>
-                </div>
+            {/* Team Member 3 - Sharleen Kiragu */}
+            <div className="bg-white rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <div className="h-64 relative">
+                <Image
+                  src="/gallery/adesk3.jpeg"
+                  alt="Sharleen Kiragu"
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-500 group-hover:scale-110 object-top"
+                />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-black mb-2">Sharleen Kiragu</h3>
-                <p className="text-[#D71920] font-medium mb-3">Trainer / Practitioner</p>
+                <p className="text-[#D71920] font-medium mb-3">Programs Administrator</p>
                 <p className="text-gray-600 text-sm">
-                  Combining theoretical knowledge with practical solar installation expertise and community outreach.
+                  Responsible for managing and coordinating our training programs, ensuring a seamless learning experience for all students.
                 </p>
-              </div>
-            </div>
-
-            {/* Join Our Team Card */}
-            <div className="bg-gradient-to-br from-[#002366] to-[#6D0D0D] rounded-2xl modern-shadow border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-6xl mb-4">🌟</div>
-                  <h3 className="text-xl font-semibold mb-2">Join Our Team</h3>
-                  <p className="text-sm opacity-90">
-                    Be part of Kenya's renewable energy future
-                  </p>
-                </div>
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-white mb-2">Career Opportunities</h3>
-                <p className="text-white/80 text-sm mb-4">
-                  We're always looking for passionate individuals to join our mission.
-                </p>
-                <Link href="/careers" className="inline-block px-6 py-2 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300">
-                  Apply Now
-                </Link>
               </div>
             </div>
           </div>

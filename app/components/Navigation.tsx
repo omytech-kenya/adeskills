@@ -91,8 +91,8 @@ export default function Navigation() {
             <Link href="/login" className="px-4 py-2 text-white hover:text-gray-200 transition-all duration-300 hover:scale-105">
               Login
             </Link>
-            <Link href="/enroll" className="px-6 py-2 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 transform hover:-translate-y-1 modern-btn">
-              Enroll Now
+            <Link href="/signup" className="px-6 py-2 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 transform hover:-translate-y-1 modern-btn">
+              Sign Up
             </Link>
           </div>
 
@@ -151,8 +151,8 @@ export default function Navigation() {
                 <Link href="/login" className="w-full px-4 py-3 text-white hover:text-gray-200 transition-all duration-300 text-left hover:bg-[#6D0D0D] rounded-lg block">
                   Login
                 </Link>
-                <Link href="/enroll" className="w-full px-4 py-3 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 block">
-                  Enroll Now
+                <Link href="/signup" className="w-full px-4 py-3 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 block">
+                  Sign Up
                 </Link>
               </div>
             </div>
