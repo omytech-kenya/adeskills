@@ -87,13 +87,15 @@ export default function Navigation() {
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-4">
-            <Link href="/login" className="px-4 py-2 text-white hover:text-gray-200 transition-all duration-300 hover:scale-105">
-              Login
-            </Link>
-            <Link href="/signup" className="px-6 py-2 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 transform hover:-translate-y-1 modern-btn">
-              Sign Up
-            </Link>
+          <div className="hidden md:flex items-center">
+            <a 
+              href="https://lms.adeskills.co.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 transform hover:-translate-y-1 modern-btn"
+            >
+              LMS
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -147,13 +149,15 @@ export default function Navigation() {
               }`}>
                 Contact
               </Link>
-              <div className="pt-4 space-y-3 border-t border-gray-100 mt-4">
-                <Link href="/login" className="w-full px-4 py-3 text-white hover:text-gray-200 transition-all duration-300 text-left hover:bg-[#6D0D0D] rounded-lg block">
-                  Login
-                </Link>
-                <Link href="/signup" className="w-full px-4 py-3 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 block">
-                  Sign Up
-                </Link>
+              <div className="pt-4 border-t border-gray-100 mt-4">
+                <a 
+                  href="https://lms.adeskills.co.ke"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full px-4 py-3 bg-[#D71920] text-white font-medium rounded-xl hover:bg-[#B3141A] transition-all duration-300 block text-center"
+                >
+                  LMS
+                </a>
               </div>
             </div>
           </div>
