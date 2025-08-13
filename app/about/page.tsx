@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "../components/Image";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
@@ -46,7 +46,7 @@ export default function About() {
             </div>
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src="/gallery/adsk1.jpeg"
                 alt="Solar Installation Training"
                 width={600}
                 height={400}
